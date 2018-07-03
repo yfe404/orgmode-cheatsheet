@@ -18,4 +18,4 @@ Cursor on the headline and then =C-c C-w=
 
 * Credits
 
-Most of this notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
+Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
