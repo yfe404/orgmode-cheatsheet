@@ -1,0 +1,18 @@
+* Getting yourself organized with Orgmode
+
+** Concept: Headlines - Outline mode
+
+Every headline starts with one or more * 
+
+Visibility of the headline hierarchy:
+- Local visibility cycling with =<TAB>=
+- Global visibility cycling with =S-<TAB>=
+
+Increase or decrease level with =S-M RIGHT= or =S-M LEFT=
+
+Move up/down within a level with =S-M UP= or =S-M DOWN=
+
+Move a headline under another top level headline:
+Cursor on the headline and then =C-c C-w=
+
+
