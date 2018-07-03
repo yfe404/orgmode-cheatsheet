@@ -16,6 +16,20 @@ Move a headline under another top level headline:
 Cursor on the headline and then =C-c C-w=
 
 
+** Concept: ToDo keywords
+Default is TODO and DONE 
+
+Cycling through them with =S RIGHT= or =S LEFT=
+
+More keywords can be defined with a line =#+SEQ_TODO=:
+- Items left of | are TODO items
+- Items right of | are DONE items
+
+Activate line with =C-c C-c=
+
+Get a menu of all keywords: =C-c C-t=
+
+
 * Credits
 
 Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
