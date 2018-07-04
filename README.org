@@ -53,6 +53,20 @@ The term [REPEAT] can be:
 - =++1w= Next occurence on the same day of week, but definitely in the future.
 - =.+4w= Next occurence 4 weeks after the task is marked as done.
 
+
+** Concept: Checklists
+Checklists provide a simple "checkoff" list.
+
+Checklists start with 
+- [ ] Text for checkitem
+
+New checklist lines can be added with =C-c C-x M= (the capital letter 'M' not the Meta key)
+
+You can see the completion of the checklist with =[/]= or =[%]= on the headline
+
+Checkboxes are toggled with =C-c C-c=
+
+
 * Credits
 
 Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
