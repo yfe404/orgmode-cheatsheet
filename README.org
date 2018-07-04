@@ -40,6 +40,19 @@ Follow mode with =S-F=
 
 Move forward with =f= or backward with =b=
 
+** Concept: Repeating tasks
+
+Some tasks occur frequently, so we should schedule them frequently. 
+
+To schedule a repeating task you need to modify the timestamp: 
+eg. < 2018-07-04 Mer [REPEAT]> 
+
+The term [REPEAT] can be: 
+
+- =+1w= Next occurence in one week. (w=week, d=day, m=month, y=year).
+- =++1w= Next occurence on the same day of week, but definitely in the future.
+- =.+4w= Next occurence 4 weeks after the task is marked as done.
+
 * Credits
 
 Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
