@@ -66,6 +66,16 @@ You can see the completion of the checklist with =[/]= or =[%]= on the headline
 
 Checkboxes are toggled with =C-c C-c=
 
+** Concept: Tags 
+Tags can be added to headlines and are often used as a way to mark GTD contexts.
+
+Tags can be predefined with a line =#+TAGS: PHONE(o)......=
+at the beginning of the file. 
+
+To assign a tag to a headline use =C-c C-q=
+
+If you have predefined tags with keys assigned, you see a menu, but you still can enter free tags by
+pressing =<TAB>=. Finish definition with =Enter=.
 
 * Credits
 
