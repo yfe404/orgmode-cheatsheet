@@ -29,6 +29,16 @@ Activate line with =C-c C-c=
 
 Get a menu of all keywords: =C-c C-t=
 
+** Concept: Schedule, deadline and agenda view
+Scheduling is done with =C-c C-s=
+
+Deadlines are defined with =C-c C-d=
+
+Switch to agenda view with =C-a a=
+
+Follow mode with =S-F=
+
+Move forward with =f= or backward with =b=
 
 * Credits
 
