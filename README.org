@@ -77,6 +77,21 @@ To assign a tag to a headline use =C-c C-q=
 If you have predefined tags with keys assigned, you see a menu, but you still can enter free tags by
 pressing =<TAB>=. Finish definition with =Enter=.
 
+** Concepts: Agenda mode (adavanced)
+
+In the agenda view: 
+
+| Key   | Function                                |
+|-------+-----------------------------------------|
+| =A=   | Agenda for the current week or day      |
+| =S-l= | Timeline for current buffer             |
+| =t=   | List of all TODO entries                |
+| =S-t= | Entries with a special TODO keyword     |
+| =m=   | Match tags / properties / TODO keywords |
+| =S-m= | Like before, but only TODO entries      |
+| =s=   | Search for keywords                     |
+
+
 * Credits
 
 Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
