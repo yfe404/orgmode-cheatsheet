@@ -77,7 +77,7 @@ To assign a tag to a headline use =C-c C-q=
 If you have predefined tags with keys assigned, you see a menu, but you still can enter free tags by
 pressing =<TAB>=. Finish definition with =Enter=.
 
-** Concepts: Agenda mode (adavanced)
+** Concept: Agenda mode (adavanced)
 
 In the agenda view: 
 
@@ -90,6 +90,12 @@ In the agenda view:
 | =m=   | Match tags / properties / TODO keywords |
 | =S-m= | Like before, but only TODO entries      |
 | =s=   | Search for keywords                     |
+
+** Concept: Customized agenda views
+
+From the agenda view:
+
+=S-c= Edit custom agenda views
 
 
 * Credits
