@@ -97,6 +97,18 @@ From the agenda view:
 
 =S-c= Edit custom agenda views
 
+** Concept: Drawers, Logging and quick notes
+
+Drawers start with a line =:DRAWERNAME:= and end with the next line that says =:END:=. 
+Everything between those lines is hidden when the drawer is closed. Open/close a drawer with =<TAB>=. 
+
+Reserved drawer names are e.g. =:LOGBOOK:= or =:PROPERTIES:=
+
+Customize =org-log-into-drawer= to LOGBOOK.
+
+Take quick notes with =C-c C-z= 
+Finish and store the note with =C-c C-c=
+
 
 * Credits
 
