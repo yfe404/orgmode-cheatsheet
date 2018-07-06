@@ -109,6 +109,20 @@ Customize =org-log-into-drawer= to LOGBOOK.
 Take quick notes with =C-c C-z= 
 Finish and store the note with =C-c C-c=
 
+** Concept: Archiving
+
+Finished tasks clutter up your org files, so it's time to move them out the way.
+
+Define a global archive file with =#+ARCHIVE: filename.org::=
+
+Archive an entry with =C-c C-x C-a=
+Archive a subtree with =C-c C-x C-s= 
+
+Search all subtrees under a headline and see which one can be archived with this keys
+=C-u C-c C-x C-s=
+
+
+
 
 * Credits
 
