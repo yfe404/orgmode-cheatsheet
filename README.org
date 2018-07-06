@@ -121,7 +121,22 @@ Archive a subtree with =C-c C-x C-s=
 Search all subtrees under a headline and see which one can be archived with this keys
 =C-u C-c C-x C-s=
 
+** Concept: Automatic logging of status change
 
+*Goal:* Get a logbook entry whenever a TODO keyword changes
+
+=#+SEQ_TODO: TODO(t@/!)=
+- =t= hotkey assigned to that todo keyword 
+- =@= log a timestamp and a note when this is entered 
+- =!= log a timestamp when you leave that keyword 
+
+*Goal:* Log a =CLOSED= timestamp when something is done
+
+Customize variable =org-log-done= 
+
+*Goal:* Log a note with a timestamp everytime something is reschedule
+
+Customize variable =org-log-reschedule= 
 
 
 * Credits
