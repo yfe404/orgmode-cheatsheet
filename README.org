@@ -153,6 +153,27 @@ Customize variable =org-log-reschedule=
 - Copy enries with =C-c M-w=
 
 
+** Concept: The first capture template(s)
+
+*Goal:* Capturing tasks, ideas and whatever
+
+*Procedure:*
+
+- Define a capture key in your =.emacs= file:
+
+#+BEGIN_SRC elisp
+(global-set-key (kbd "<f6>") 'org-capture)
+#+END_SRC
+
+- Write template files (eg. tpl-todo.txt)
+- Press your capture =f6= key and =S-c= to configure
+  - Hotkey for capture
+  - Destination
+  - Format
+  - Based on what template file or text
+- Start capturing
+ 
+
 
 * Credits
 
