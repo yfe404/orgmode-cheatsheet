@@ -138,6 +138,21 @@ Customize variable =org-log-done=
 
 Customize variable =org-log-reschedule= 
 
+** Concept: Splitting your system up to several files
+
+*Goal:* Instead of one file for all we want to have one for private things and one for work.
+
+*Procedure:*
+
+- Customize =org-agenda-files= so that both files are used to generate the agenda views.
+- Customize refile function (fine tuning)
+  - =org-refile-targets=
+  - =org-refile-use-outline-path=
+  - =org-refile-allow-creating-parent-nodes=
+- Move entries with =C-c C-w=
+- Copy enries with =C-c M-w=
+
+
 
 * Credits
 
