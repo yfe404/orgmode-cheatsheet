@@ -195,6 +195,26 @@ Matching properties in agenda views is possible too.
 *Recipe:* Define an =:ARCHIVE:= property with the target name eg. =:ARCHIVE:= track-books::* Read books
 Definition is done on the top hierarchy level and then inherited to its children.
 
+** Concept: Ordered tasks
+
+*Goal:* Tasks must be completed one after the other.
+
+*Recipe:* Define the =:ORDERED:= property with value =t=.
+
+Toggle the =:ORDERED:= property with =C-c C-x o=
+
+Customizing variables:
+#+BEGIN_SRC elisp
+'(org-enforce-todo-dependencies t)
+'(org-track-ordered-property-with-tag t)
+#+END_SRC
+
+
+More customization:
+#+BEGIN_SRC elisp
+org-agenda-dim-blocked-tasks
+org-enforce-todo-checkbox-dependencies
+#+END_SRC
 
 * Credits
 
