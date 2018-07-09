@@ -188,6 +188,13 @@ Important: the =:PROPERTIES:= drawer must immediately follow the headline.
 Matching properties in agenda views is possible too.
 
 
+** Concept: Archiving to different files
+
+*Goal:* You want to archive your read books in an extra file and not inside the global archive.
+
+*Recipe:* Define an =:ARCHIVE:= property with the target name eg. =:ARCHIVE:= track-books::* Read books
+Definition is done on the top hierarchy level and then inherited to its children.
+
 
 * Credits
 
