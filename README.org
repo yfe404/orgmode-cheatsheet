@@ -216,6 +216,27 @@ org-agenda-dim-blocked-tasks
 org-enforce-todo-checkbox-dependencies
 #+END_SRC
 
+** Concept: Timers
+
+*Goal:* Start a countdown timer.
+
+*Recipe:* Start it with =C-c C-x :=
+
+*Goal:* Start a relative timer
+
+*Recipe:*
+
+| Command                       | Shortcut        |
+|-------------------------------+-----------------|
+| Start timer                   | =C-c C-x 0=     |
+| Start with offset             | =C-u C-c C-x 0= |
+| Insert simple time stamp      | =C-c C-x .=     |
+| Insert description time stamp | =C-c C-x -=     |
+| Pause timer                   | =C-c C-x ,=     |
+| Start again                   | =C-c C-x ,=     |
+| Stop with                     | =C-u C-c C-x ,= |
+
+
 * Credits
 
 Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
