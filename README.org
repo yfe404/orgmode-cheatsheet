@@ -267,13 +267,28 @@ More key combinations:
 *Recipe:* Define columns like that 
 =#+COLUMNS:%7TODO(To Do)%58ITEM(Task)....=
 
-Column view can be set locally with the :COLUMNS: property drawer.
+Column view can be set locally with the =:COLUMNS:= property drawer.
 
 Show column view =C-c C-x C-c=
 
 Leave view =q=  
 
 
+** Concept: Effort estimates
+
+*Goal:* Estimate the effort that you task will need.
+
+*Recipe:* Effort estimates are stored in a property =:Effort:=
+
+Easy setup: Define =#+PROPERTY:Effort_ALL= and then possible values. Add this to column view with =%8Effort(Effort){:}=.
+The ={:}= means sum up times.
+
+Show column view with =C-c C-x C-c=
+
+Increase effort: =S-rarrow= 
+Decrease effort: =S-larrow= 
+
+Leave view =q=  
 
 
 * Credits
