@@ -260,6 +260,20 @@ More key combinations:
 | Cancel clock         | =C-c C-x C-q=     |
 | Show times           | =C-c C-x C-d=     |
 
+** Concept: Column view
+
+*Goal:* Show your org file in columns
+
+*Recipe:* Define columns like that 
+=#+COLUMNS:%7TODO(To Do)%58ITEM(Task)....=
+
+Column view can be set locally with the :COLUMNS: property drawer.
+
+Show column view =C-c C-x C-c=
+
+Leave view =q=  
+
+
 
 
 * Credits
