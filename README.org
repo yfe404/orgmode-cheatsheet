@@ -237,6 +237,31 @@ org-enforce-todo-checkbox-dependencies
 | Stop with                     | =C-u C-c C-x ,= |
 
 
+** Concept: Clocking (aka time tracking)
+
+*Goal:* Measure how long you need for a task
+
+- Clock in =C-c C-x C-i= 
+- Clock out =C-c C-x C-o=
+
+Customization 
+#+BEGIN_SRC elisp
+'(org-clock-into-drawer "CLOCKING")
+#+END_SRC
+
+
+More key combinations:
+
+| Command              | shortcut          |
+|----------------------+-------------------|
+| Restart a clock      | =C-c C-x C-x=     |
+| Restart with menu    | =C-u C-c C-x C-x= |
+| Jump to clocked task | =C-c C-x C-j=     |
+| Cancel clock         | =C-c C-x C-q=     |
+| Show times           | =C-c C-x C-d=     |
+
+
+
 * Credits
 
 Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
