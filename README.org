@@ -290,7 +290,39 @@ Decrease effort: =S-larrow=
 
 Leave view =q=  
 
+** Concept: Linking (internal)
 
+*Goal:* Link to other items in the actual file.
+
+*Recipe:* A link looks like that 
+#+BEGIN_SRC verbatim
+[[target]]
+#+END_SRC
+You can also use a description like 
+#+BEGIN_SRC verbatim
+[[target][description]]
+#+END_SRC
+
+Targets: 
+- A headline
+- A place in the document with a =#+NAME:= target line
+- An item with a =:CUSTOM_ID:= property
+
+Special: 
+- Radio targets that look like this =<<<target>>>= create a link on the fly 
+
+
+Key combinations: 
+
+| command                     | shortcut  |
+|-----------------------------+-----------|
+| Edit links with             | =C-c C-l= |
+| Follow link with            | =C-c C-o= |
+| Return to previous position | =C-c &=   |
+
+** Concept: Linking (external))
+
+   
 * Credits
 
 Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
