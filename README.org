@@ -320,9 +320,73 @@ Key combinations:
 | Follow link with            | =C-c C-o= |
 | Return to previous position | =C-c &=   |
 
+
+
 ** Concept: Linking (external))
 
+*Goal:* Link to other items somewhere in the world.
+
+
+*Recipe:* A link looks like that:
+#+BEGIN_SRC verbatim
+[[target]]
+#+END_SRC
+You can also use a description like 
+#+BEGIN_SRC verbatim
+[[target][description]]
+#+END_SRC
+
+
+Targets: protocol:location
+
+Special: Linking to items with an ID property ID is an UUID that you create with =M-x org-id-get-create=
+
+Shortcut: 
+
+The purpose of this code is that it creates ID properties for every headline (if there isn’t one already) when you save your OrgMode file.
+#+BEGIN_SRC elisp
+;; Credit: http://stackoverflow.com/questions/13340616/assign-ids-to-every-entry-in-org-mode
+
+(defun my/org-add-ids-to-headlines-in-file ()
+  "Add ID properties to all headlines in the current file which
+do not already have one."
+  (interactive)
+  (org-map-entries 'org-id-get-create))
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (add-hook 'before-save-hook 'my/org-add-ids-to-headlines-in-file nil 'local)))
+#+END_SRC
    
+
+This function is bound to the F5 key. Whenever you press F5 then it takes
+ the ID and copies it to the killring (aka Clipboard). If the headline has no
+ ID property it creates one. In that way, you can easily create links to IDs because copying the ID is just one keystroke.
+
+#+BEGIN_SRC elisp
+;; Credit: https://koenig-haunstetten.de/2016/07/09/code-snippet-for-orgmode-e05s02/
+
+(defun my/copy-id-to-clipboard() "Copy the ID property value to killring,
+if no ID is there then create a new unique ID. 
+This function works only in org-mode buffers.
+
+The purpose of this function is to easily construct id:-links to 
+org-mode items. If its assigned to a key it saves you marking the
+text and copying to the killring."
+       (interactive)
+       (when (eq major-mode 'org-mode) ; do this only in org-mode buffers
+	 (setq mytmpid (funcall 'org-id-get-create))
+	 (kill-new mytmpid)
+	 (message "Copied %s to killring (clipboard)" mytmpid)
+       ))
+
+(global-set-key (kbd "") 'my/copy-id-to-clipboard)
+#+END_SRC
+
+
+Customizing: =org-id-locations-file= stores in what file orgmode should look for IDs.
+
+
 * Credits
 
 Most of these notes comes from [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König video serie on OrgMode tutorial]].
